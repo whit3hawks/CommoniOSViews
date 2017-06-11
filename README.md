@@ -9,6 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Screenshots
+
+<p align="center">
+<img src="screenshot1.png"/>
+</p>
+
 ## Requirements
 
 - iOS 8.0+
