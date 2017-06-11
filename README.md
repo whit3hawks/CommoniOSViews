@@ -1,6 +1,6 @@
 # CommoniOSViews
 
-[![CI Status](http://img.shields.io/travis/Sharif Khaleel/CommoniOSViews.svg?style=flat)](https://travis-ci.org/Sharif Khaleel/CommoniOSViews)
+[![CI Status](http://img.shields.io/travis/whitehawks/CommoniOSViews.svg?style=flat)](https://travis-ci.org/whitehawks/CommoniOSViews)
 [![Version](https://img.shields.io/cocoapods/v/CommoniOSViews.svg?style=flat)](http://cocoapods.org/pods/CommoniOSViews)
 [![License](https://img.shields.io/cocoapods/l/CommoniOSViews.svg?style=flat)](http://cocoapods.org/pods/CommoniOSViews)
 [![Platform](https://img.shields.io/cocoapods/p/CommoniOSViews.svg?style=flat)](http://cocoapods.org/pods/CommoniOSViews)
@@ -10,6 +10,15 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+- iOS 8.0+
+- Xcode 8.1+
+- Swift 3.0+
+
+## Features
+
+- [x] Gradient UIView
+- [x] Shadow UIView
 
 ## Installation
 
@@ -22,7 +31,8 @@ pod "CommoniOSViews"
 
 ## Author
 
-Sharif Khaleel, ll.hawk.ll@gmail.com
+Sharif Khaleel
+Twitter at [@whit3hawks](https://twitter.com/whit3hawks)
 
 ## License
 
