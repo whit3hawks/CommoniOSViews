@@ -1,0 +1,6 @@
+framework module Pods_CommoniOSViews_Example {
+  umbrella header "Pods-CommoniOSViews_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -5,7 +5,5 @@ target 'CommoniOSViews_Example' do
 
   target 'CommoniOSViews_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
   end
 end

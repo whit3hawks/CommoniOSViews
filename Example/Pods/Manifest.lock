@@ -1,0 +1,16 @@
+PODS:
+  - CommoniOSViews (0.1.0)
+
+DEPENDENCIES:
+  - CommoniOSViews (from `../`)
+
+EXTERNAL SOURCES:
+  CommoniOSViews:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CommoniOSViews: 2b033509098633baa5ebfa30302c0425aa5c6c1e
+
+PODFILE CHECKSUM: 7133c51739b0ec0da097587e7736a800bdedea61
+
+COCOAPODS: 1.2.1

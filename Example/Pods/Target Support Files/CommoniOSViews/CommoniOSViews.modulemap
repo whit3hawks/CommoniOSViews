@@ -1,0 +1,6 @@
+framework module CommoniOSViews {
+  umbrella header "CommoniOSViews-umbrella.h"
+
+  export *
+  module * { export * }
+}
