@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,8 +23,65 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMa-Ep-uAT" customClass="ShadowView" customModule="CommoniOSViews">
-                                <rect key="frame" x="8" y="28" width="359" height="152"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="8" y="28" width="359" height="209.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="21S-jr-vt2" customClass="CircleImageView" customModule="CommoniOSViews">
+                                        <rect key="frame" x="139.5" y="16" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="EzO-wk-ARW"/>
+                                            <constraint firstAttribute="width" constant="80" id="RMa-dm-aor"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@whit3hawks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg7-wr-FU5" customClass="RoundCornerLabel" customModule="CommoniOSViews">
+                                        <rect key="frame" x="129.5" y="132" width="100" height="24"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="ido-r0-zDH"/>
+                                            <constraint firstAttribute="width" constant="100" id="xXv-5i-hVK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                                        <color key="textColor" red="0.20392156859999999" green="0.81176470590000005" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sharif Khaleel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnu-gA-nLi">
+                                        <rect key="frame" x="8" y="104" width="343" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="a7Y-HS-i1z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="xnu-gA-nLi" firstAttribute="leading" secondItem="VMa-Ep-uAT" secondAttribute="leading" constant="8" id="1Md-iM-9dQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="xnu-gA-nLi" secondAttribute="trailing" constant="8" id="2gP-jw-D8H"/>
+                                    <constraint firstItem="21S-jr-vt2" firstAttribute="top" secondItem="VMa-Ep-uAT" secondAttribute="top" constant="16" id="5O4-Pq-4T0"/>
+                                    <constraint firstItem="rg7-wr-FU5" firstAttribute="centerX" secondItem="VMa-Ep-uAT" secondAttribute="centerX" id="C6f-22-wAQ"/>
+                                    <constraint firstItem="21S-jr-vt2" firstAttribute="centerX" secondItem="VMa-Ep-uAT" secondAttribute="centerX" id="JfH-cD-l7t"/>
+                                    <constraint firstItem="rg7-wr-FU5" firstAttribute="top" secondItem="xnu-gA-nLi" secondAttribute="bottom" constant="8" id="p6m-f6-Amg"/>
+                                    <constraint firstItem="xnu-gA-nLi" firstAttribute="top" secondItem="21S-jr-vt2" secondAttribute="bottom" constant="8" id="udz-fi-TLr"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -34,7 +92,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-tS-xH3" customClass="ShadowView" customModule="CommoniOSViews">
-                                <rect key="frame" x="8" y="188" width="359" height="151.5"/>
+                                <rect key="frame" x="8" y="245.5" width="359" height="105"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -46,7 +104,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sha-AD-H3l" customClass="ShadowView" customModule="CommoniOSViews">
-                                <rect key="frame" x="8" y="347.5" width="359" height="152"/>
+                                <rect key="frame" x="8" y="358.5" width="359" height="167"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -58,7 +116,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8D-0G-cYv" customClass="ShadowView" customModule="CommoniOSViews">
-                                <rect key="frame" x="8" y="507.5" width="359" height="151.5"/>
+                                <rect key="frame" x="8" y="533" width="359" height="126"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -76,10 +134,10 @@
                             <constraint firstItem="e8D-0G-cYv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="8Tz-fb-7mW"/>
                             <constraint firstItem="VMa-Ep-uAT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="9fG-r1-00H"/>
                             <constraint firstAttribute="trailing" secondItem="lRf-tS-xH3" secondAttribute="trailing" constant="8" id="CgK-W0-iZK"/>
-                            <constraint firstItem="lRf-tS-xH3" firstAttribute="height" secondItem="VMa-Ep-uAT" secondAttribute="height" id="J5U-2a-gqB"/>
+                            <constraint firstItem="lRf-tS-xH3" firstAttribute="height" secondItem="VMa-Ep-uAT" secondAttribute="height" multiplier="0.5" id="J5U-2a-gqB"/>
                             <constraint firstAttribute="trailing" secondItem="VMa-Ep-uAT" secondAttribute="trailing" constant="8" id="Mel-Ge-5nD"/>
                             <constraint firstAttribute="trailing" secondItem="e8D-0G-cYv" secondAttribute="trailing" constant="8" id="Rjy-VE-4jb"/>
-                            <constraint firstItem="e8D-0G-cYv" firstAttribute="height" secondItem="VMa-Ep-uAT" secondAttribute="height" id="Rua-hF-Syz"/>
+                            <constraint firstItem="e8D-0G-cYv" firstAttribute="height" secondItem="VMa-Ep-uAT" secondAttribute="height" multiplier="0.6" id="Rua-hF-Syz"/>
                             <constraint firstItem="e8D-0G-cYv" firstAttribute="top" secondItem="Sha-AD-H3l" secondAttribute="bottom" constant="8" id="T3g-gq-mKW"/>
                             <constraint firstItem="Sha-AD-H3l" firstAttribute="top" secondItem="lRf-tS-xH3" secondAttribute="bottom" constant="8" id="Z0L-xc-1dI"/>
                             <constraint firstItem="VMa-Ep-uAT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="amZ-PV-LCa"/>
@@ -87,7 +145,7 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="e8D-0G-cYv" secondAttribute="bottom" constant="8" id="ou2-h3-bg7"/>
                             <constraint firstItem="lRf-tS-xH3" firstAttribute="top" secondItem="VMa-Ep-uAT" secondAttribute="bottom" constant="8" id="sfO-Se-IUf"/>
                             <constraint firstItem="Sha-AD-H3l" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="u8Y-fF-sES"/>
-                            <constraint firstItem="Sha-AD-H3l" firstAttribute="height" secondItem="VMa-Ep-uAT" secondAttribute="height" id="vJ7-Dl-a5d"/>
+                            <constraint firstItem="Sha-AD-H3l" firstAttribute="height" secondItem="VMa-Ep-uAT" secondAttribute="height" multiplier="0.8" id="vJ7-Dl-a5d"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -104,4 +162,7 @@
             <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="picture" width="200" height="200"/>
+    </resources>
 </document>

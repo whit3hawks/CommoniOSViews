@@ -23,8 +23,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Features
 
-- [x] Gradient UIView
-- [x] Shadow UIView
+- [x] Gradient UIView (GradientView)
+- [x] Shadow UIView (ShadowView)
+- [x] Circle UIImage (CircleImageView)
+- [x] Round Corner UILabel (CircleImageView)
 
 ## Installation
 

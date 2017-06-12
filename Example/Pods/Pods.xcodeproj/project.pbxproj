@@ -12,6 +12,8 @@
 		78163BDD1EEDD03E00AABE7F /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78163BDC1EEDD03E00AABE7F /* ShadowView.swift */; };
 		78163BDF1EEDD06000AABE7F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78163BDE1EEDD06000AABE7F /* GradientView.swift */; };
 		78163BE21EEDD12300AABE7F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78163BE11EEDD12300AABE7F /* Extensions.swift */; };
+		784292561EEF1C8600B55CAE /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784292551EEF1C8600B55CAE /* CircleImageView.swift */; };
+		784292581EEF1DA100B55CAE /* RoundCornerLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784292571EEF1DA100B55CAE /* RoundCornerLabel.swift */; };
 		9E0C011331EB877BF9CE8AED795A6ABB /* Pods-CommoniOSViews_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 010B01FA190BEC28A46CEEFA1C2F0FFE /* Pods-CommoniOSViews_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF33145564221D4200D6879005442344 /* Pods-CommoniOSViews_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57739024257EAB9D5CE20430079321F7 /* Pods-CommoniOSViews_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5F06C7AE0609AFB3CF1377125D5A314 /* Pods-CommoniOSViews_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED241DB14C8893D02439B5E5CBFAB54 /* Pods-CommoniOSViews_Example-dummy.m */; };
@@ -53,6 +55,8 @@
 		78163BDC1EEDD03E00AABE7F /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShadowView.swift; path = UIViews/ShadowView.swift; sourceTree = "<group>"; };
 		78163BDE1EEDD06000AABE7F /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = UIViews/GradientView.swift; sourceTree = "<group>"; };
 		78163BE11EEDD12300AABE7F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		784292551EEF1C8600B55CAE /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleImageView.swift; path = UIViews/CircleImageView.swift; sourceTree = "<group>"; };
+		784292571EEF1DA100B55CAE /* RoundCornerLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundCornerLabel.swift; path = UIViews/RoundCornerLabel.swift; sourceTree = "<group>"; };
 		8B8251936EE9009E19D807446E526CAC /* CommoniOSViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommoniOSViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B64D381BCBD5C6E1FC5BBEF321B569E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			children = (
 				78163BDE1EEDD06000AABE7F /* GradientView.swift */,
 				78163BDC1EEDD03E00AABE7F /* ShadowView.swift */,
+				784292551EEF1C8600B55CAE /* CircleImageView.swift */,
+				784292571EEF1DA100B55CAE /* RoundCornerLabel.swift */,
 			);
 			name = UIViews;
 			sourceTree = "<group>";
@@ -368,9 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784292581EEF1DA100B55CAE /* RoundCornerLabel.swift in Sources */,
 				78163BDD1EEDD03E00AABE7F /* ShadowView.swift in Sources */,
 				729045E9F321EB2B3FD6388E5CE5C2D4 /* CommoniOSViews-dummy.m in Sources */,
 				78163BDF1EEDD06000AABE7F /* GradientView.swift in Sources */,
+				784292561EEF1C8600B55CAE /* CircleImageView.swift in Sources */,
 				78163BE21EEDD12300AABE7F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

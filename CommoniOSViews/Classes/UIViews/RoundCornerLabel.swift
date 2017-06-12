@@ -1,8 +1,8 @@
 //
-//  ShadowView.swift
+//  RoundCornerLabel.swift
 //  Pods
 //
-//  Created by Sharif Khaleel on 6/12/17.
+//  Created by Sharif Khaleel on 6/13/17.
 //
 //
 
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public class ShadowView: UIView {
+public class RoundCornerLabel: UILabel {
     
     var layoutSet = false
     
@@ -32,6 +32,12 @@ public class ShadowView: UIView {
         }
     }
     
+    @IBInspectable var padding: CGFloat = 0 {
+        didSet{
+            setStyle()
+        }
+    }
+    
     override public func layoutSubviews() {
         if !layoutSet{
             self.setStyle()
@@ -39,16 +45,17 @@ public class ShadowView: UIView {
         }
     }
     
+    override public func drawText(in rect: CGRect) {
+        let insets = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+        self.setNeedsLayout()
+        return super.drawText(in: UIEdgeInsetsInsetRect(rect, insets))
+    }
+    
     func setStyle(){
         self.layer.cornerRadius = cornerRadius
         self.layer.borderColor  = borderColor.cgColor
         self.layer.borderWidth  = borderWidth
-        self.layer.shadowColor   = UIColor(hexString: "C7C7C7", alpha: 1).cgColor
-        self.layer.shadowOpacity = 0.5
-        self.layer.shadowRadius  = 5
-        self.layer.shadowOffset  = CGSize(width: 1, height: 1)
-        self.layer.masksToBounds = false
+        self.layer.masksToBounds = true
     }
     
 }
-
